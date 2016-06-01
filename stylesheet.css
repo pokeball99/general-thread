@@ -1,0 +1,34 @@
+.quote {
+    color: #789922;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.aquote {
+    color: #000;
+}
+
+body {
+    width: 50%;
+    margin: 0 auto; 
+    background: #EEF2FF url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADICAYAAAAp8ov1AAAAl0lEQVQokZXE1xKCMBAAwPv/v1PpvXcSwK5ofGEGBpIL7sPCQSUM8I4aL4p00v9IMSgDxehkqSZez0CzpOn2qmGZ4Ugz3YGB6Z75WZ4g278gOQGv65QbCvKiudsmP8YKkju/MOX1mIoyQXE+99yUFFhp+eKXVcLeDPJaWtGsGpeVrbSKjAwq8kGq6b6a7ru/tsdjm8iA9AM+q+gbghLNkAAAAABJRU5ErkJggg==) top center repeat-x;
+    font-family: arial, helvetica, sans-serif
+}
+
+img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}
+
+div {
+    padding-top: 245px;
+    position: absolute;
+    width: 50%;
+}
+
+.quote:not(.aquote)::before {
+    content: '> ';
+}
