@@ -24,12 +24,15 @@ body {
     font-family: arial, helvetica, sans-serif
 }
 
-img {
-    padding-top: 15px;
+a:first-child {
     padding-bottom: 15px;
     position: absolute;
     left: 50%;
+    width: 200px;
+    height: 200px;
     margin-left: -100px;
+    z-index: 9001;
+    padding-top: 15px;
 }
 
 #main {
